@@ -170,13 +170,14 @@ const Register = () => {
           <FontAwesomeIcon icon={faInfoCircle} />
           Must match the first password input field.
         </p>
+          {/* BUTTON */}
+          <button disabled={!validName || !validMatch || !validPwd ? true:false} className="submitButton">
+            Sign Up
+          </button>
+      {/* ALREADY REGISTRED */}
       </form>
 
-      {/* BUTTON */}
-      <button disabled={!validName || !validMatch || !validPwd ? true:false} className="submitButton">
-        Sign Up
-      </button>
-      {/* ALREADY REGISTRED */}
+      
 
       <p>
         Already registred? <br />
